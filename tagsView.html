@@ -1,0 +1,7 @@
+<template name="tags">
+  <select id="tags" name="tags" multiple>
+    {{#each tags}}
+    <option value="{{name}}" selected="{{isActive ../active}}">{{name}}</option>
+    {{/each}}
+  </select>
+</template>
