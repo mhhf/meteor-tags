@@ -9,6 +9,6 @@ Template.tags.rendered = function(){
 
 Template.tags.helpers({
   isActive: function( active ){
-    return active.indexOf(this.name) > -1;
+    return active && ( active.indexOf(this.name) > -1 );
   }
 });
